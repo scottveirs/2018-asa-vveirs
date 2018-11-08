@@ -39,12 +39,13 @@
     <section class="slide">
     
       <h2><div style="text-align: center;">Orcasound lab: a soundscape analysis case study in killer whale habitat with implications for coastal ocean observatories</div></h2>
-      <img src="content/alan-niles-mayas-legacy.jpg">      
+      <img src="content/alan-niles-mayas-legacy.jpg" width="500">      
       <div style="text-align: center;"><i>
       <h5>Val Veirs and Scott Veirs, Beam Reach (SPC), Seattle, WA</h5>
-      <h5>Lauren McWhinnie, Patrick O’Hara, & Gregory O’Hagan, NEMES Univ. Of Victoria, Victoria, BC</h5></i></div>
-      <div style="text-align: center;">(NEMES = Noise Exposure to the Marine Environment from Ships)</div>
-      <div style="text-align: right;">Presentation at the Victoria ASA meeting, Nov 9, 2018</div>
+      <h5>Lauren McWhinnie, Patrick O’Hara, & Gregory O’Hagan, NEMES/U.Vic, Victoria, BC</h5></i>
+      <h3>Victoria ASA meeting, Nov 9, 2018</h3>
+      <p>(NEMES = Noise Exposure to the Marine Environment from Ships)</p>
+      </div>
     </section>
 
 <!-- slide 2 -->
@@ -62,35 +63,42 @@
 	    </center>
             <ul>
               <li>in SRKW critical habitat within Haro Strait
-              <li>cabled, calibrated nearshore hydrophones
-              <li>bottom-mounted at depth of ~10 meters
-              <li>1-2 km from shipping lanes
-              <li>just south of Roche and Snug Harbors
+              <li>cabled, calibrated hydrophones <100 m from shore
+              <li>bottom-mounted at depth of ~10 m
+              <li>1-2 km to busy shipping lanes (ship sources)
+              <li>~2 km to entrance to Roche & Snug Harbors (boat sources)
             </ul>
             <img src="content/map-haro-strait.png">
-          </td>
-        </tr>
-      </table>
       <div>
         Thank you to everyone who backed our <a href="https://www.kickstarter.com/projects/sveirs/orcasound-listen-for-whales">Kickstarter</a>!
       </div>
+          </td>
+        </tr>
+      </table>
     </section>
 
 <!-- slide 3 -->
 	<section class="slide">
-		<h2>Acoustic data and methods: one year of underwater noise recordings (11/2016 - 11/2017)</h2>
+		<h2>Acoustic data and methods</h2>
+		<h3>One year of underwater noise recordings (11/2016 - 11/2017)</h3>
 		<table cellpadding="2" cellspacing="2">	
 		      <tr>     
-			  <td> <img src="content/orcaSoundHydrophonePipe.png" width="454" height="640" alt=""></td>
+			  <td> <img src="content/os-val-intertidal.jpg" width="400"  alt=""></td>
                          <td>
 			 <ul>
-                         <li>Recorded from ITC 6050C hydrophone at OrcaSound Lab, San Juan Island </li>
+                         <li>ITC 6050C hydrophone</li>
 		         <li>Calibrated via Interoceans Calibration system</li>
-		         <li>Stored as 16 bit WAV files at 44200 hz sampling rate</li>
-		         <li>Analyzed here via 1 sec RMS dB levels</li>
-		         <ul><li>Broadband (10-22050 hz)</li>
-		             <li>Call weighted (500 - 5000 hz)</li>
-	                 <li>Click weighted (5000 - 22050 hz)</li> </ul>
+		         <li>Stored as 16 bit WAV files at 44200 Hz sampling rate</li>
+		         <li>Analyzed 1 sec RMS dB levels in 3 bands:</li>
+		         <ul>
+			     <li>Broadband (10-22050 hz)</li>
+		             <li>Call-weighted (500 - 5000 hz)</li>
+	                     <li>Click-weighted (5000 - 22050 hz)</li> </ul>
+			<h3>Automatic Information System (AIS) data</h3>
+			<ul>
+			<li>Logged for all AIS vessels with range <10 km</li>
+			<li>Converted to local UTM coordinates, then bearing & range</li> 
+			</ul>
 		         </td>
 		       </tr>
 		 </table>
@@ -106,7 +114,7 @@
   	<td><img src="content/NEMEScameraViewSml.JPG"></td>
           <td>
                   <img src="content/haro-study-map.png">
-                  <center><h5>Continuous hydrophone and AIS data; intermittent images during daytime starting in August 2017.</h5></center>
+                  <center>Images taken on daytime duty cycle, starting in August, 2017.</center>
           </td>
   	  <td><img src="content/NEMEScameraSml.JPG"></td>
   	</tr>
@@ -115,9 +123,15 @@
 
 
 	<section class="slide">
-             <h2>NEMES camera: measure range, speed and received levels of boats</h2>
-            <div style="text-align: center;">Video: NEMES images of 20-kt boat with computed range determining source level</div>
+             <h2>NEMES camera methods:</h2>
+	     <h3>measure range, speed, & received levels of boats</h2>
+		<ul>
+		<li>Locate boat in each frame with Theo (custom QT program)</li>
+		<li>Compute time of closest point of approach (CPA)</li>
+		<li>Compare with time of acoustic peak(s)</li>
+		</ul>
             <img src="content/nemesCameraScreenshot.png"  alt="">
+            <div style="text-align: center;">Video: NEMES images of 20-kt boat with computed range determining source level</div>
 	</section>
 
 
