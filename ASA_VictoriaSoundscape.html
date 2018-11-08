@@ -167,15 +167,25 @@
 	   <img src="content/9_27_9am_KWcalls.png"  alt="">
 	</section>
 
+	<section class="slide">
+           <h2>Various sources of underwater noise</h2>
+	   <img src="content/9_27_3pm_withBlueNbndTankerSbnd.jpg"  alt="">
+	</section>
+
 
 	<section class="slide">
-           <h2>Broadband SPL distribution: seasonal and diurnal differences</h2>
+           <h2>Broadband SPL quantiles: seasonal and diurnal differences</h2>
 	   <table>
 		<tr>
 		<td>
-	<h4>This is a test title that is pretty long...</h4>
+	<h4>Quantiles of the broadband noise over a one year period (2017)</h4>
+	
 	<ul>
-	<li> test data
+	<li> The y-axis is the percentage of the time that the dB level is less than the corresponding x-value.</li>
+	<li> In the summer a day/night difference appears because of the summertime presence of lots of speedboats.</li>
+	<li> Boats raise the median (50% quantile) dB levels 5 dB in the day compared to the night.</li>
+	<li> This effect is more prominent below the median noise level as boat noise is itself most frequent at lower dB levels.</li>
+	<li> In the winter there is little difference between day and night.</li>
 	</ul>
 		</td>
 		<td><img src="content/db_BB_QuantilesAll.jpg"></td>
@@ -185,15 +195,17 @@
 
 
 	<section class="slide">
-           <h2>Broadband SPL distribution: received, without ships, without boats</h2>
+           <h2>Broadband summer SPL quantiles: received, without ships, without boats</h2>
 	   <table>
 		<tr>
 		<td>
-	<h4>This is a test title that is pretty long...</h4>
+	<h4></h4>
 	<ul>
-	<li> Received level (RL)
-	<li> RL - ship noise
-	<li> RL - ship noise - boat nosie
+	<li> Black = received levels from all sources
+	<li> Blue  = RL after ships are removed (AIS and ship detector)
+	<li> Red   = RL after ships and boats are removed
+	<li> Removing ships reduces the median by 2 dB and the 75% by 7 dB</li>
+	<li> Now removing boats drops the median one more dB.</li>
 	</ul>
 		</td>
 		<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
@@ -204,7 +216,11 @@
 
 
 	<section class="slide">
-	<h2>Broadband thresholds from the CDFs</h2>
+	<h2>Broadband thresholds from the quantiles</h2>
+	   <table>
+		<tr>
+		<td>
+	<h4></h4>	
 	<ul>
 		<li>Ancient ambient?
 		<li>Urban background? (Non-anthropogenic local sources)
@@ -212,6 +228,11 @@
 		<li>European standards
 		<li>Old NOAA thresholds?
 	</ul>
+	</td>
+		<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
+		</tr>
+	   </table>
+
 	</section>
 
 
