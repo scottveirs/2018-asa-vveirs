@@ -216,7 +216,11 @@
 
 
 	<section class="slide">
-	<h2>Broadband thresholds from the CDFs</h2>
+	<h2>Broadband thresholds from the quantiles</h2>
+	   <table>
+		<tr>
+		<td>
+	<h4></h4>	
 	<ul>
 		<li>Ancient ambient?
 		<li>Urban background? (Non-anthropogenic local sources)
@@ -224,6 +228,11 @@
 		<li>European standards
 		<li>Old NOAA thresholds?
 	</ul>
+	</td>
+		<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
+		</tr>
+	   </table>
+
 	</section>
 
 
