@@ -89,11 +89,11 @@
                          <li>ITC 6050C hydrophone</li>
 		         <li>Calibrated via Interoceans Calibration system</li>
 		         <li>Stored as 16 bit WAV files at 44200 Hz sampling rate</li>
-		         <li>Analyzed 1 sec RMS dB levels in 3 bands:</li>
+		         <li>Analyzed 1-sec RMS sound pressure levels (SPL) in 3 bands:</li>
 		         <ul>
-			     <li>Broadband (10-22050 hz)</li>
-		             <li>Call-weighted (500 - 5000 hz)</li>
-	                     <li>Click-weighted (5000 - 22050 hz)</li> </ul>
+			     <li>Broadband (10-22050 Hz)</li>
+		             <li>Call-weighted (500 - 5000 Hz)</li>
+	                     <li>Click-weighted (5000 - 22050 Hz)</li> </ul>
 			<h3>Automatic Information System (AIS) data</h3>
 			<ul>
 			<li>Logged for all AIS vessels with range <10 km</li>
@@ -149,25 +149,25 @@
 
 	
 	<section class="slide">
-          <h2>Peak levels are similar for ships & boats, but ships last longer</h2>
+          <h2>Broadband peak sound pressure levels</h2>
+	  <h3>similar for ships & boats, but ships last longer</h3>
           <img src="content/65_JD_2458046_2017-10-19_hrs__to_12.jpg">
 	</section>
 
 
 	<section class="slide">
-          <h2>27 Sep. 2017 case study: 2 ships, boats, & passing northbound</h2>
+          <h2>27 Sep a.m. -- 2 ships, boats, & SRKWs</h2>
           <img src="content/9_27_8am.jpg"  alt="">
           Smooth curve (black) is 1200 sec running average broadband dB levels
 	</section>
 
-
 	<section class="slide">
-           <h2>A close look at the killer whale calls</h2>
-	   <img src="content/9_27_9am_KWcalls.png"  alt="">
+           <h2>27 Sep: a peak from killer whale calls</h2>
+	   <img src="content/9_27_9am_KWcalls.png" alt="">
 	</section>
 
 	<section class="slide">
-           <h2>Various sources of underwater noise</h2>
+           <h2>27 Sep p.m. -- various sources of underwater noise</h2>
 	   <img src="content/9_27_3pm_withBlueNbndTankerSbnd.jpg"  alt="">
 	</section>
 
@@ -177,14 +177,7 @@
 	   <table>
 		<tr>
 		<td>
-<<<<<<< HEAD
-		<h4>This is a test title that is pretty long...</h4>
-		<ul>
-		<li> test data</li>
-		</ul>
-=======
 	<h4>Quantiles of the broadband noise over a one year period (2017)</h4>
-	
 	<ul>
 	<li> The y-axis is the percentage of the time that the dB level is less than the corresponding x-value.</li>
 	<li> In the summer a day/night difference appears because of the summertime presence of lots of speedboats.</li>
@@ -192,7 +185,6 @@
 	<li> This effect is more prominent below the median noise level as boat noise is itself most frequent at lower dB levels.</li>
 	<li> In the winter there is little difference between day and night.</li>
 	</ul>
->>>>>>> 209c2b8c0d4191096f17acb12f16b0308e9ed6a3
 		</td>
 		<td><img src="content/db_BB_QuantilesAll.jpg"></td>
 		</tr>
@@ -218,6 +210,8 @@
 		</tr>
 	   </table>
 	</section>
+
+
 	<section class="slide">
            <h2>Broadband summer SPL quantiles: Implementing the Okeanos Pledge</h2>
 	   <table>
@@ -239,23 +233,36 @@
 
 
 	<section class="slide">
-	<h2>Broadband thresholds from the quantiles</h2>
+	<h2>Can we develop new thresholds from local quantiles?</h2>
 	   <table>
 		<tr>
 		<td>
-	<h4></h4>	
-	<ul>
-		<li>Ancient ambient?
-		<li>Urban background? (Non-anthropogenic local sources)
-		<li>L_50?
-		<li>European standards
-		<li>Old NOAA thresholds?
-	</ul>
-	</td>
+		<h4>"Urban ambient" noise levels...</h4>	
+		Derived from time series with local anthropogenic sources removed.
+		</ul>
+		</td>
 		<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
 		</tr>
 	   </table>
+	</section>
 
+
+	<section class="slide">
+	<h2>Proposal for new acoustic metrics (for orcas in an urban estuary? eleswhere?)</h2>
+	<h3>What baseline for computation of "delta" noise metrics?</h3>
+	<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
+	</section>
+
+
+	<section class="slide">
+	<h2>Proposal for new acoustic metrics</h2>
+	<h3>Duration of time above local ambient?</h3>
+	<td><img src="content/db_BB_QuantilesNoAISsummerNoBoatsAlltimes.jpg"></td>
+	</section>
+
+
+	<section class="slide">
+	<h2>Questions?</h2>
 	</section>
 
 
@@ -263,34 +270,21 @@
 	<h2>Measurements of RL within the whale watching fleet</h2>
 	   <table>
 		<tr>
+		<td><center>Griffin & Bain, 2006</center></td>
+		<td><center>Holt et al., 2009</center></td>
+		<td><center>Holt et al., 2017</center></td>
+		</tr>
+		<tr>
+		<td><img src="content/griffin-ww-boat-RL-fig.png"></td>
 		<td><img src="content/holt-boat-RL-plot.png"></td>
 		<td><img src="content/holt-dtag-RL-fig.png"></td>
-		<td><img src="content/griffin-ww-boat-RL-fig.png"></td>
 		</tr>
+                <tr>
+                <td><center>Median 128 dB<br>(0.1-100 kHz, 60s)</center></td>
+                <td><center>Mean 110 dB RMS<br>(1-40 kHz, 0.25s)</center></td>
+                <td><center>Mean 108 dB RMS<br>(1-40 kHz, 1s)</center></td>
+                </tr>   
 	   </table>
-
-
-	</section>
-
-
-	<section class="slide">
-	<h2>Influence of averaging time on noise statistics?</h2>
-	</section>
-
-
-	<section class="slide">
-	<h2>Backyard baseline (for deltas)?</h2>
-	<h2>Proposal for an acoustic baseline for SRKWs in Haro Strait</h2>
-	</section>
-
-
-	<section class="slide">
-	<h2>Acknowledgements?</h2>
-	</section>
-
-
-	<section class="slide">
-	<h2>Questions?</h2>
 	</section>
 
 
